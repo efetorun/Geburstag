@@ -14,7 +14,8 @@ public class C08_PeriodOf {
     LocalDate dogumgunu=LocalDate.of(1990,12,26);
 
     Period gecenSure= Period.between(dogumgunu,bugun);
-        System.out.println(gecenSure);
+        System.out.println(gecenSure.getYears());//310
+
 
 }
 }
