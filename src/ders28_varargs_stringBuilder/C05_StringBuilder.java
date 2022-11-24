@@ -17,7 +17,8 @@ public class C05_StringBuilder {
         System.out.println(sb);
 
         String str="Java cok güzel";
-
+        System.out.println(str.toUpperCase());
+        System.out.println(str);
         sb.insert(15,9);
         System.out.println(sb.indexOf("m"));//2 m nin index ini bulduk
 
