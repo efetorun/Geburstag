@@ -45,7 +45,7 @@ public class I09_ChildOfI08 implements I08_InterfaceStaticUndDefaultMethods {
 
     public static void main(String[] args) {
         List<String> isimler = new ArrayList<>();
-    I08_InterfaceStaticUndDefaultMethods.
+
 
     }
 }
