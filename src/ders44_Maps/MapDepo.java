@@ -119,4 +119,33 @@ return isimListesi;
             System.out.println(eachKey + " "+valueArr[0] + " " + valueArr[1]);
         }
    }
+
+    public static Set<String> siraliOgrenciListesiOlusutr(Map<Integer, String> ogrenciMapi) {
+
+    Set<String> siraliOgrenciSeti=new TreeSet<>();
+
+Set<Map.Entry<Integer,String>>ogrenciEntrySeti=ogrenciMapi.entrySet();
+
+        String istenenBilgi;
+        String value;
+        String [] valueArr;
+
+
+
+
+        for (Map.Entry<Integer,String> eachEntry:ogrenciEntrySeti
+             ) {
+            value=eachEntry.getValue();
+            valueArr=value.split("-");
+
+            istenenBilgi=valueArr[4]+", "+valueArr[2]+", "+valueArr[3]+", "+
+                    valueArr[0]+", "+valueArr[1]+", "+eachEntry.getKey();
+            siraliOgrenciSeti.add(istenenBilgi);
+
+        }
+    return siraliOgrenciSeti;
+
+
+
+    }
 }
